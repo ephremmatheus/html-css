@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        a{
+            color: rgb(0, 255, 34);
+            text-decoration: none;
+        }
+        
+
+        a:visited{
+            color: green;
+            
+        }
+        a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+
+        a:active{
+            color: red;
+        }
+
+        .special::before{
+            content: '->';
+            color: cornflowerblue;
+        }
+
+        .special::after{
+            content:'<-';
+            color: cornflowerblue;
+        }
+
+        body{
+            font-family: Arial
+            , Helvetica, sans-serif;
+        }
+
+        div:hover>p{
+            display: block;
+            background-color: red;
+            color: white;
+        }
+
+        div > p{
+            display: none;
+        }
+        div{
+            text-align:center;
+            background-color: grey;
+            border: 2px solid black;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/ephremmatheus" target="_blank" rel="external" class="special">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/ephrem-matheus-821a5a294/" target="_blank" rel="external">Linkedin</a></li>
+        <li><a href="https://color.adobe.com/pt/create/color-whe" target="_blank" rel="external">Adobe Color</a></li>
+        <li><a href="https://www.google.com.br/" target="_blank" rel=external>Google</a></li>
+    </ul>
+
+    <div>
+        passe o mouse
+        <p>Mensagem Secreta!!!!!!! </p>
+    </div>
+</body>
+</html>
