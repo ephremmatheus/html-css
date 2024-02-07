@@ -12,8 +12,8 @@
 }
 
 *{
- margin: 0px;
- padding: 0px;
+    margin: 0px;
+    padding: 0px;
 }
 
 header{
@@ -44,10 +44,53 @@ header a:hover{
 
 main p{
     font-family: var(--fontepoema);
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 1.5em;
+    padding: 15px;
+    margin:15px;
+    line-height: 40px;
 }
 
 section{
     padding: 30px;
+    margin-bottom: 20px;
+}
+
+#flor{
+    background: yellow url(../imagens/background001.jpg) right center/cover no-repeat fixed ;
+}
+
+#flor p{
+    background-color: rgba(134, 134, 134, 0.295);
+    color: white;
+    max-width: 250px;
+    padding-left: 4px;
+}
+
+#carta{
+    background: rgb(211, 210, 144) url(../imagens/background002.jpg) center center/cover no-repeat fixed;
+}
+
+#carta p{
+    background-color: rgba(0, 0, 0, 0.438);
+    color: white;
+    max-width: 250px;
+    padding-left: 4px;
+}
+
+footer{
+    background-color: black;
+    padding: 15px;
+    color: white;
+    text-align: center;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+
+    text-decoration: underline;
 }
